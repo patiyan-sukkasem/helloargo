@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ./deployment-hello-1.yaml
+  - ./deployment-hello-2.yaml
+  - ./deployment-redis.yaml
+  - ./ingress.yaml
+  - ./pvc-redis.yaml
+  - ./secret-redis.yaml
+  - ./service-hello-1.yaml
+  - ./service-hello-2.yaml
+  - ./service-redis.yaml

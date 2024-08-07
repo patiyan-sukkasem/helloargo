@@ -1,0 +1,11 @@
+{
+  "appName": "hello-dev",
+  "userGivenName": "helloapp",
+  "destNamespace": "hello-dev",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "helloapp/overlays/dev",
+  "srcRepoURL": "https://github.com/patiyan-sukkasem/helloapp-deployments.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}

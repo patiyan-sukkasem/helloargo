@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-app-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: app.satang.com
+    http:
+      paths:
+      - path: /hello1
+        pathType: Prefix
+        backend:
+          service:
+            name: hello-1-service
+            port:
+              number: 8000
+      - path: /hello2
+        pathType: Prefix
+        backend:
+          service:
+            name: hello-2-service
+            port:
+              number: 8000

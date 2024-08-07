@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-2-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-2
+  template:
+    metadata:
+      labels:
+        app: hello-2
+    spec:
+      containers:
+      - name: hello-2
+        image: pepoolife/hello-2:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: REDIS_HOST
+          value: "redis:6379"
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: redis-secret
+              key: password
+        - name: REDIS_DB
+          value: "0"

@@ -1,0 +1,7 @@
+# this will be automatic create from command line argocd-autopilot project create <PROJECT_NAME>
+
+# spec:
+#   generators:
+#   - git:
+#       files:
+#       - path: apps/**/dev/config.json

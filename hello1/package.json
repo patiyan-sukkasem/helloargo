@@ -1,0 +1,14 @@
+{
+    "name": "hello-1-app",
+    "version": "1.0.0",
+    "description": "A simple Node.js app using Express and Redis",
+    "main": "hello-1.js",
+    "scripts": {
+      "start": "node hello-1.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "redis": "^3.1.2"
+    }
+  }
+  
