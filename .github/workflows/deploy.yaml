@@ -4,7 +4,13 @@ on:
   push:
     branches:
       - main
-
+    paths:
+      - "**.go"
+      - "**.js"
+      - "**.json"      
+      - "go.*"
+      - "Dockerfile"
+      - "CHANGELOG.md"
 jobs:
   build:
     runs-on: ubuntu-latest
