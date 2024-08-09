@@ -5,12 +5,8 @@ on:
     branches:
       - main
     paths:
-      - "**.go"
-      - "**.js"
-      - "**.json"      
-      - "go.*"
-      - "Dockerfile"
-      - "CHANGELOG.md"
+      - "hello1/**"
+      - "hello2/**"
 jobs:
   build:
     runs-on: ubuntu-latest
